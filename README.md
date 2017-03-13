@@ -1,11 +1,11 @@
 ## The homebrew tap for go-jira
 
-[![Build Status](https://travis-ci.org/mumoshu/homebrew-go-jira.svg?branch=master)](https://travis-ci.org/mumoshu/homebrew-go-jira)
+[![Build Status](https://travis-ci.org/JonathonMA/homebrew-go-jira.svg?branch=master)](https://travis-ci.org/JonathonMA/homebrew-go-jira)
 
 ### Usage
 
 ```
-$ brew tap mumoshu/go-jira
+$ brew tap JonathonMA/go-jira
 ```
 
 And then install go-jira:
