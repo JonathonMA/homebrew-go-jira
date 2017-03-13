@@ -2,17 +2,16 @@ class GoJira < Formula
   desc "go-jira - simple jira command line client in Go" if respond_to? :desc
   homepage "https://github.com/Netflix-Skunkworks/go-jira"
 
-  # curl -L -o hoge https://github.com/Netflix-Skunkworks/go-jira/releases/download/0.0.19/jira-darwin-38 && chmod +x hoge && ./hoge -h
-  url "https://github.com/Netflix-Skunkworks/go-jira/releases/download/0.0.19/jira-darwin-386"
+  url "https://github.com/Netflix-Skunkworks/go-jira/releases/download/v0.1.10/jira-darwin-10.6-amd64"
 
   # shasum -a 256 thefile
-  sha256 "c7b6c9ff974c7120bb721579ca53fc6d9c7e8537f50f2d8c18b7c74deec58896"
+  sha256 "f1806c8da5cb6184ce4da6aef34664dac88b01243e1523a887df4fc8aae2d022"
 
   # See https://github.com/Netflix-Skunkworks/go-jira/releases
-  version "0.0.19"
+  version "0.1.11"
 
   def install
-    bin.install "jira-darwin-386" => "jira"
+    bin.install "jira-darwin-10.6-amd64" => "jira"
   end
 
   def caveats; <<-EOS.undent
@@ -29,9 +28,5 @@ class GoJira < Formula
 
       project: foo
     EOS
-  end
-
-  test do
-    shell_output("eval \"$(#{bin}/anyenv init -)\" && anyenv version")
   end
 end
